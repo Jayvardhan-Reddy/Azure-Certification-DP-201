@@ -97,3 +97,18 @@ Road to Azure Data Engineer Part-II
  - design for read scale
  - design for multi-master writes
 
+
+# Tips to remember, A day prior to the Exam.
+
+| Azure Service | Type of File |
+| :---: | :---: |
+| Azure CosmosDB | Graph Databases |
+| Azure Hbase and HDInsight | Column Family in-memory key-value store |
+
+| Azure Service | Usage |
+| :---: | :---: |
+| Azure Synapse | Data analytics |
+| Azure Search | Search engine databases |
+| Azure Timeseries Insights | Time series databases |
+| Azure Blob | Object store |
+| Azure FileStorage | Shared files |
