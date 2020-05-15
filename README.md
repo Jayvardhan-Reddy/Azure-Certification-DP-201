@@ -182,3 +182,9 @@ Road to Azure Data Engineer Part-II
 | Azure Timeseries Insights | Time series databases |
 | Azure Blob | Object store |
 | Azure FileStorage | Shared files |
+
+Azure CosmosDB Usage:
+
+- For Real-Time Customer Experiences
+- Telemetry stores for IOT
+- Migrate NoSQL apps
