@@ -168,6 +168,48 @@ Road to Azure Data Engineer Part-II
 
 ------------------------------------------------------------------------
 
+## Azure SQL Database hosting options
+
+<img src="images/14.SQL-Hosting-Options.jpg">
+
+------------------------------------------------------------------------
+
+## SQL Security
+
+<img src="images/15.SQL-Security.jpg">
+
+------------------------------------------------------------------------
+
+## Scenario to choose Azure SQL
+
+<img src="images/16.SQL-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+## Scenario to choose Azure Synapse
+
+<img src="images/17.Synapse-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+## Scenario to choose Azure Data Lake Storage Gen2
+
+<img src="images/18.ADLS-Gen2.jpg">
+
+------------------------------------------------------------------------
+
+## Azure Stream Analytics
+
+<img src="images/19.Stream-Analytics.jpg">
+
+------------------------------------------------------------------------
+
+## Scenario to choose Stream Analytics
+
+<img src="images/20.Stream-Analytics-Usecase.jpg">
+
+------------------------------------------------------------------------
+
 # Tips to remember, A day prior to the Exam.
 
 | Azure Service | Type of File |
