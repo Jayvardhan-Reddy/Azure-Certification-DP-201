@@ -102,6 +102,71 @@ Road to Azure Data Engineer Part-II
 
 <img src="images/3.Azure-Storage-Decision_1.jpg">
 
+## Scenario's to choose different CosmosDB API's
+
+<img src="images/4.Core-SQL-Usecase.jpg">
+
+----
+
+<img src="images/5.Core-SQL-Usecase_1.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/6. Gremlin-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/7.MongoDB-Usecase.jpg">
+
+    - We are not looking into any relationships so Gremlin is not the right choice
+    - Other CosmosDB API's are not used since the existing queries are MongoDB native and there MongoDB is the best fit
+
+------------------------------------------------------------------------
+
+<img src="images/8.Cassandra-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/9.Azure-Table-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+## Request Unit Considerations for CosmosDB
+
+- Item size
+- Item indexing
+- Item property count
+- Indexed properties
+- Data consistency
+- Query patterns
+- Script usage
+
+## CosmosDB Partition Design
+
+- Items are placed into logical partitions by partition key
+- Partition keys should generally be based on unique values
+- Ideally the partition key should be part of a query to prevent "fan out"
+- Logical partitions are mapped to physiccal partitions
+- A physical partition always contains atleast one logical partition
+- Physical partitions are capped at 10GB
+- As physical partitions fill-up they will seamlessly split
+- Logical partitions can not be split
+
+<img src="images/10.CosmosDB-Partition-Design.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/11.CosmosDB-Usecase.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/12.Azure-Table-VS-Cosmos-Table.jpg">
+
+------------------------------------------------------------------------
+
+<img src="images/13. Azure-Storage.jpg">
+
+------------------------------------------------------------------------
 
 # Tips to remember, A day prior to the Exam.
 
