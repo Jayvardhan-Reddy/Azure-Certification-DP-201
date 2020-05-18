@@ -247,13 +247,13 @@ The lambda architecture, addresses this problem by creating two paths for data f
 
 <img src="images/24.IOT.jpg">
 
-#### Scenario's to use Batch Processing
+### Scenario's to use Batch Processing
 
 - From simple data transformations to a more complete ETL (extract-transform-load) pipeline
 - In a big data context, batch processing may operate over very large data sets, where the computation takes significant time.
 - One example of batch processing is transforming a large set of flat, semi-structured CSV or JSON files into a schematized and structured format that is ready for further querying.
 
-#### Design considerations for Batch processing
+### Design considerations for Batch processing
 
 - Data format and encoding
     - When files use an unexpected format or encoding
@@ -264,15 +264,15 @@ The lambda architecture, addresses this problem by creating two paths for data f
     - Often source data is placed in a folder hierarchy that reflects processsing windows, organized by year, month, day, hour, and so on.
     - Can the downstream processing logic handle out-of-order records?
 
-#### Batch processing Logical components
+### Batch processing Logical components
 
 <img src="images/26.Batch-Processing-Logical-Component.jpg">
 
-#### Batch processing Techmology choices
+### Batch processing Techmology choices
 
 <img src="images/27.Batch-Processing-Technology-Choices.jpg">
 
-#### Batch processing with Azure Databricks
+### Batch processing with Azure Databricks
 
 <img src="images/28.Azure-Databricks.jpg">
 
@@ -282,7 +282,7 @@ The lambda architecture, addresses this problem by creating two paths for data f
 - Web-based notebooks for collaboration and data exploration.
 - Supports GPU-rnabled clusters.
 
-#### Usage of Azure Databricks
+### Usage of Azure Databricks
 
 <img src="images/29.Azure-Databricks-Usage.jpg">
 
@@ -307,7 +307,7 @@ The lambda architecture, addresses this problem by creating two paths for data f
 | Azure Blob | Object store |
 | Azure FileStorage | Shared files |
 
-Azure CosmosDB Usage:
+### Azure CosmosDB Usage:
 
 - For Real-Time Customer Experiences
 - Telemetry stores for IOT
