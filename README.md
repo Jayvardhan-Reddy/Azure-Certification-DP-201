@@ -288,7 +288,83 @@ The lambda architecture, addresses this problem by creating two paths for data f
 
 -  To read data from multiple data sources such as Azure Blob Storage, ADLS, Azure Cosmos DB, or SQL DW and turn it into breakthrough insights using spark.
 
+### Azure Machine Learning
 
+<img src="images/30.Azure-ML.jpg">
+
+### Machine Learning Typical E2E process
+
+<img src="images/31-E2E-Process.jpg">
+
+### Devops Loop for Data Science
+
+<img src="images/32.Devops-Loop-DataScience.jpg">
+
+### Azure Databricks + Azure ML
+
+- Log experiments and models in a central place
+- Maintain audit trails centrally
+- Deploy models seamlessly in Azure ML
+- Manage your models in Azure ML
+
+### Standardizing the ML lifecycle on Azure Databricks
+
+<img src="images/33.ML-Lifecycle.jpg">
+
+### Realtime Processing
+
+<img src="images/34.Realtime-Processing.jpg">
+
+### Challenges
+
+- One of the big challenges of real-time processing solutions is to ingest, process, and store messages in real time, especially at high volumes.
+- Procesing must be done in such a way that it does not block the ingestion pipeline.
+- The data store must support high-volume writes.
+- Another challenge is to act on data quickly such as generating alerts in real time or presenting the data in a real-time (or near real-time) dashboard.
+
+### Real Time Processing Architecture - Logical COmponents
+
+<img src="images/35.Realtime-Processing-Logical-Component.jpg">
+
+### Real Time Processing Techonolgy choices
+
+<img src="images/36.Realtime-Processing-Techonology-Choice.jpg">
+
+### Azure Data Factory (ADF)
+
+<img src="images/37.ADF.jpg">
+
+A cloud-based data integration service that allows you to orchestrate and automate data movement and data transformation.
+- Connect & collect
+- Transform and enrich
+
+### ADF Components
+
+<img src="images/38.ADF-Components.jpg">
+
+### Data Transformation in Azure
+
+<img src="images/39.ADF-Transformation.jpg">
+
+### Scenario to use ADF
+
+<img src="images/40.ADF-Scenario.jpg">
+
+### Real Time Analytics
+
+<img src="images/41.Real-Time-Analytics.jpg">
+
+### Complexities in Stream Processing
+
+- Complex Data
+    - Diverse data formats (json, avro, binary, ...)
+    - Data can be dirty, latem out of order
+    
+- Complwx Workloads
+    - Combining Streaming with interactive queries
+    - Machine learning
+    
+    
 
 ------------------------------------------------------------------------
 
