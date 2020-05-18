@@ -60,6 +60,8 @@ Road to Azure Data Engineer Part-II
   - plan to purge data based on business requirements
 
 
+## 1. Design Azure Data Storage Solutions
+
 ## Azure Storage
 
 ### BLOB
@@ -143,6 +145,8 @@ Road to Azure Data Engineer Part-II
 
 ## CosmosDB Partition Design
 
+<img src="images/10.CosmosDB-Partition-Design.jpg">
+
 - Items are placed into logical partitions by partition key
 - Partition keys should generally be based on unique values
 - Ideally the partition key should be part of a query to prevent "fan out"
@@ -151,8 +155,6 @@ Road to Azure Data Engineer Part-II
 - Physical partitions are capped at 10GB
 - As physical partitions fill-up they will seamlessly split
 - Logical partitions can not be split
-
-<img src="images/10.CosmosDB-Partition-Design.jpg">
 
 ------------------------------------------------------------------------
 
@@ -207,6 +209,86 @@ Road to Azure Data Engineer Part-II
 ## Scenario to choose Stream Analytics
 
 <img src="images/20.Stream-Analytics-Usecase.jpg">
+
+## 2. Design Data Processing Solutions
+
+### Components of Big Data architecture
+
+<img src="images/21.BigData-Components.jpg">
+
+### Lambda Architecture
+
+<img src="images/22.Lambda-Architecture.jpg">
+
+- When working with very large data sets, it can take a long time to run the sort of queries that clients need.
+- Often require algorithms such as Spark/ Mapreduce that operate in parallel across the entire data set.
+- The results are then stored seperately from the raw data and used for querying.
+- Drawback to this approach is that it intoduces latency
+
+The lambda architecture, addresses this problem by creating two paths for data flow:
+- Batch layer (cold path)
+- Speed layer (hot path)
+
+### Kappa Architecture
+
+<img src="images/23.Kappa-Architecture.jpg">
+
+- A drawback to the lambda architecture is its complexity.
+- Processign logic appears in two different places - the cold and hot paths - using different frameworks
+- This leads to duplicate computation logic and the complexity of managing the architecture for both paths.
+- The kappa architecture was proposed by Jay Kreps as an alternative to the lambda architecture.
+- All data flows through a single path, using a stream processing system.
+
+### IOT
+
+<img src="images/24.IOT.jpg">
+
+### Batch Processing
+
+<img src="images/24.IOT.jpg">
+
+#### Scenario's to use Batch Processing
+
+- From simple data transformations to a more complete ETL (extract-transform-load) pipeline
+- In a big data context, batch processing may operate over very large data sets, where the computation takes significant time.
+- One example of batch processing is transforming a large set of flat, semi-structured CSV or JSON files into a schematized and structured format that is ready for further querying.
+
+#### Design considerations for Batch processing
+
+- Data format and encoding
+    - When files use an unexpected format or encoding
+      - Example is text fields that contain tabs, spaces, or commas that are interpreted as delimeters
+    - Data loading and parsing logic must be flexible enough to detect and handle these issues.
+    
+- Orchestrating time slices
+    - Often source data is placed in a folder hierarchy that reflects processsing windows, organized by year, month, day, hour, and so on.
+    - Can the downstream processing logic handle out-of-order records?
+
+#### Batch processing Logical components
+
+<img src="images/26.Batch-Processing-Logical-Component.jpg">
+
+#### Batch processing Techmology choices
+
+<img src="images/27.Batch-Processing-Technology-Choices.jpg">
+
+#### Batch processing with Azure Databricks
+
+<img src="images/28.Azure-Databricks.jpg">
+
+- Fast cluster start times, autotermination, autoscaling
+- Built-in integration with Azure Blob Storage, ADLS, Azure Synapse, and other services.
+- User authentication with Azure Active Directory.
+- Web-based notebooks for collaboration and data exploration.
+- Supports GPU-rnabled clusters.
+
+#### Usage of Azure Databricks
+
+<img src="images/29.Azure-Databricks-Usage.jpg">
+
+-  To read data from multiple data sources such as Azure Blob Storage, ADLS, Azure Cosmos DB, or SQL DW and turn it into breakthrough insights using spark.
+
+
 
 ------------------------------------------------------------------------
 
