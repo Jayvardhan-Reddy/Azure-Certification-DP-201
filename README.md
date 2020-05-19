@@ -364,7 +364,142 @@ A cloud-based data integration service that allows you to orchestrate and automa
     - Combining Streaming with interactive queries
     - Machine learning
     
+## 3. Design for Data Security and Compliance
+
+### Securing Azure Storage
+
+- Azure services such as Blob storage, Files share, Table storage, and Data Lake Store all build on Azure Storage.
+- High-level security benefits for the data in the cloud:
+    - Protect the data at rest
+        - That is encrypt the data before persisting it into the storage and decrypt while retrieving. eg: Blob, Queue
+    - Protect the data in transit
+    - Support browser cross-domain access
+    - Control who can access data
+    - Audit storage class
+
+#### Encryption at rest - Azure Storage Service Encryption (SSE)
+
+- All storage data encrypted at rest - protected from physical breach
+    - By default, one master key per account, managed by Microsoft
+    - Optionally, protect the master key with your own key in Azure Key Vault
+    - Each write encrypted with a unique derived key
+
+- All data writtern to storage is encrypted with SSE i.e, 256 bit advanced standard AES cipher. SSE automatically encrypts data on writting to Azure storage. This feature cannot be disabled
+
+<img src="images/42.Sorage-Encryption.jpg">
+
+- For VM's Azure lets you encrypt virtual hard-disks by using Azure disk encryption. This encryption uses bitlocker for windows images and uses DEM encrypt for linux.
+
+- Azure key Vault stores the keys automatically to help you contaol and manage disk encryption, keys and secret automatically.
+
+<img src="images/43.Storage-Encryption-AKV.jpg">
+
+---------------
+
+<img src="images/44.Storage-SSE.jpg">
+
+#### Encryption at rest models
+
+<img src="images/45.Encryption-Model.jpg">
+
+#### Azure Key-Vault
+
+<img src="images/46.AKV.jpg">
+
+- Safeguard cryptogrpahic keys and other secrets used by cloud apps and services.
+
+#### Encryption in transit
+
+- Keep your data secure by enabling transport-level security between Azure and the client.
+- Always use HTTPS to secure communication over the public internet.
+- When you call the REST APIs to access objects in storage accounts, you can enforce the use of HTTPS by requiring secure transfer for the storage account.
+
+#### Cross Origin Resource Sharing (CORS) support
+
+- Azure Storage supports cross-domain access through cross-origin resource sharing (CORS)
+- It is a optional flag that can be applied on storage accounts. The flag adds appropriate headers when you use http requests to retirve resources from storage account.
+- It uses HTTP headers so that a web application at one domain can access resources from a server at a different domain.
+- By using CORS, web apps ensure that they load only authorizes content from authorized sources.
+
+#### Identity-Based Access Control for Azure Blob Storage
+
+##### Grant access to user and service identities from Azure Active Directory
+
+- Federate with enterprise identity systems
+- Leverage powerful AAD capabilities including 2-factor and biometric authentication, conditional access, identity protection and more.
+
+##### Control access with role-based access control (RBAC)
+
+- Grant access to storage scopes ranging from entire enterprise down to one blob container
+- Define custom roles that match your security model
+- Leverage Privileged Identity Management to reduce standing administrative access.
+
+AAD Authentication and RBAC currently support AAD, OAuth and RBAC on Storage Resource Provider via ARM.
+
+#### Managed identities for Azure resources
+
+<img src="images/47.Managed-Identities.jpg">
+
+- Auto-managed identity in Azure AD for Azure resource.
+- Use the MSI endpoint to get access tokens from Azure AD (no secretes required).
+- Direct authentication with services, or retrieve creds from Azure key vault
+- No additional charge for MSI.
+
+#### Managed Shared Access Policies and Signatures
+
+Storage Explorer provides the ability to manage access policies for containers.
+
+- A shared access signature (SAS) provides you with a way to grant limited access to other clients, without exposing your account key.
+- Provides delegated access to resources in your storage account.
+
+##### Types of Shared Access Signature (SAS)
+
+- Service level
+  - Service level SAS are defined on a resource under a particular service.
+  - Used to allow access to specific resources in a storage account.
+  - For example, to allow an app tp retrieve a list of files in a file system or to download a file.
+  
+- Account level
+  - Targets the storage account and can apply to multiple services and resources
+  - For example, you can use an account-level SAS to allow the ability to create file systems.
+  
+#### Immutability Policies
+
+- Support for time-based retention
+    - container level configuration
+    - RBAC support and policy auditing
+    - BLobs cannot be modified or deleted for N days
     
+- Support for legal holds with tags
+    - Container level configuration
+    - Blobs can not be modified or deleted when legal hold is set.
+    
+- Support for all Blob tiers
+    - Applies to hot, cool and cold data
+    - Policies retained when data is tiered
+    
+- SEC 17a-4(f) complaint
+
+#### Firewall rules
+
+<img src="images/48.Firewal-Rules.jpg">
+
+- Azure SQL DB has a built-in firewall that is used to allow and deny network access to both the db server itself, as well as individual db.
+- Server-level firewall rules
+    - Allow access to Azure services
+    - IP address rules
+    - Virtual network rules
+- Database-level firewall rules
+    - IP address rules
+
+#### Firewalls and VNET access
+
+<img src="images/49.Storage-Firewall.jpg">
+
+- Storage Firewall
+    - Block internet access to data
+    - Grant access to clients in specific vnet
+    - Grant access to clients from on-premise networks via public peering network gateway
 
 ------------------------------------------------------------------------
 
