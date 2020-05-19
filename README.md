@@ -501,6 +501,37 @@ Storage Explorer provides the ability to manage access policies for containers.
     - Grant access to clients in specific vnet
     - Grant access to clients from on-premise networks via public peering network gateway
 
+#### Private endpoints
+
+- Azure private endpoint is a fundamental building block for private link in Azure. It enables service like Azure VM to communicate privately with private link resources.
+- It is a network interwork interface that connects you privately and securely to service powered by Azure Private link.
+- A private endpoint assigns a private IP address from your Azure Virtual Network (VNET) to the storage account.
+- private endpoint enables communication from the same VNet, regionally peered VNets, globally peered VNets, and on-premises using VPN or Express Route, and services powered by private link.
+- It secures all traffic between your VNet and the storage account over a private link.
+
+#### Advanced threat protection for Azure Storage
+
+- An additional layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts
+- These security alerts are integrated with Azure Security Center.
+
+#### Secure Azure Cosmos DB Data
+
+- Using Firewal settings
+- Add inbound and Outbound networks
+
+#### Azure SQL database - Secure your data in transit, at rest and on display
+
+- TLS network encryption
+    - Azure SQL DB enforces Transport Layer Security (TLS) encryption at all times for all connections, which ensures all data is encrypted "in transit" between the database and the client.
+- Transparent Data Encryption (TDE)
+    - Protects your data at rest using TDE.
+    - TDE performs real-time encryption and decryption of the DB, associated backups, and transaction log files at rest without requiring changes to the application.
+- Dynamic data masking
+    - By using the this, we can limit the data that is displayed to the user.
+    - Policy-based security feature that hides the sensitive data in the result set of a query over designated DB fields, while the data in the DB is not changed e.g: phone numbers, credit card numbers.
+    
+    
+
 ------------------------------------------------------------------------
 
 # Tips to remember, A day prior to the Exam.
