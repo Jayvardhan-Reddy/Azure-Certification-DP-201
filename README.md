@@ -6,7 +6,6 @@ Road to Azure Data Engineer Part-II
 <img src="images/1.Exam-Pattern.jpg">
 
 ### 1. Design Azure Data Storage Solutions (40-45%)
-
 - Recommend an Azure data storage solution based on requiremnets
 
   - choose the correct data storage solution to meet the technical and business requirements
@@ -556,6 +555,42 @@ Storage Explorer provides the ability to manage access policies for containers.
 - In the client-side outbound firewall and in the NSG rules, set this public endpoint IP address to limit outbound connectivity.
 - Use a NSG to limit access to the managed instance public endpoint on port 3342.
 
+##### Azure SQL Database and Azure Synapse Analytics data discovery & classification
+
+- Discovery & recommendations
+    - The classification engine scans your DB and identifies columns containing potentially sensitive data. It then provides you an easy way to review and apply the appropriate classification recommendations via the Azure portal.
+- Labeling
+    - Sensitivity classification labels can be persistently tagged on columns using new classification metadata attributes introduced into the SQL Engine. This metadata can then be utilized for advanced sensitivity-based auditing and protection scenarios.
+- Query result set sensitivity
+    - The sensitivity of query result set is calculated in real time for auditing purposes.
+- Visibility
+    - The DB classification state can be viewed in a detailed dashboard in the portal.
+
+##### Discover, classify & label sensitive columns
+
+The classification includes two metadata attributes:
+- Lables
+    - The main classification attributes used to define the sensitivity level of the data stored in the column.
+- Information Types
+    - Provide additional granularity into the type of data stored in the column.
+    
+### Architecture of Azure Data Factory  
+
+<img src="images/51.ADF-Architecture.jpg">
+
+##### Security aspects that are part of the above architecture
+
+- AAD access control
+    - SQLDB, ADLS Gen2 and Azure funtion only allow the Managed Identity (MI) of ADFv2 to access the data. THis means that no keys need to be stored in ADFv2 or Key vaults.
+    - To secure ADLS Gen2 account:
+        - Add RBAC rule that only MI of ADFv2 can access ADLS Gen2
+        - Add firewall rule that only VNET of Self Hosted Integrated Runtime (SHIR) can access ADLS Gen2 container.
+- Firewall rules
+  - SQLDB, ADLS Gen2 and Azure funtion all have firewall rules in which only the VNET of the SHIR is allowed as inbound network.
+  - To secure SQLDB:
+      - Add Database rule that only MI of ADFv2 can access SQLDB
+      - Add firewall rule that only VNET of SHIR can access SQLDB
+
 ------------------------------------------------------------------------
 
 # Tips to remember, A day prior to the Exam.
@@ -578,3 +613,7 @@ Storage Explorer provides the ability to manage access policies for containers.
 - For Real-Time Customer Experiences
 - Telemetry stores for IOT
 - Migrate NoSQL apps
+
+### Azure Data Factory
+
+- Does not store any data except for linked service credentials for cloud data stores, which are encrypted by using certificates.
