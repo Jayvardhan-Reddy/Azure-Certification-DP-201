@@ -62,3 +62,28 @@ Which components should your architecture include? Pick 3
 - Use Azure Stream Analytics to send the real time data to Power BI :heavy_check_mark:
 - Create a Databricks application to analyze the streamed data :heavy_check_mark:
 - Use ADF to send the data to Azure SQL Database and use it to create visualizations in Power BI
+
+8. Which of the following statements about Azure Security Center are false? (Pick 2)
+
+- Azure Security Center needs to be deployed to monitor PaaS Services :heavy_check_mark:
+- It is used to create policies for subscriptions, management groups and tenants
+- Policy complaince is traced over time in percentages over all resources
+- Security Center is used to configure user port access
+- Role based access of data security is managed by security center :heavy_check_mark:
+
+9. Which steps are required to apply Advanced data security for a SQL Database? (Pick 2)
+
+- Enable Advanced Data Security on the storage account
+- Enable Advanced Data Security on the server :heavy_check_mark:
+- Identify the PII data you wish to secure
+- Turn on Auditing for the database
+- Configure Advanced Threat Protection Types :heavy_check_mark:
+
+10. The following step must be completed prior to configuring a COnditional Access policy on Azure SQL Database.
+
+- Turn on Auditing for the database
+- Create Conditional Access Policies
+- Configure the DB to support Azure Active Directory Authentication :heavy_check_mark:
+- Create Conditional Access Rules
+- Add Groups to the Conditional Access Role
+- Select the Cloud App Azure SQL Database
