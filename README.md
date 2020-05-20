@@ -530,7 +530,31 @@ Storage Explorer provides the ability to manage access policies for containers.
     - By using the this, we can limit the data that is displayed to the user.
     - Policy-based security feature that hides the sensitive data in the result set of a query over designated DB fields, while the data in the DB is not changed e.g: phone numbers, credit card numbers.
     
-    
+#### Enable Database Auditing
+
+- For SQL Serverm you can create audits tha contain specifications for server-level events and specifications for databse-level events.
+- Audited events can be weitteb to the event logs or to audit files
+- There are several levels of auditing for SQL Server, depending on government or standards requirements for your installation.
+- Azure SQL DB and Azure Synapse Analytics auditing tracks database events and writes them to an audit log in your Azure storage account.
+- Enable Threat detection to know any malicious activities on SQL DB or potential security threats.
+
+#### Use an Azure SQL Database managed instance securely with public endpoints
+
+- A SQL DB managed instance provides a private endpoint to allow connectivity from inside its VNET.
+
+##### Scenarios where you need to provide public endpoint connection
+
+- The managed instance must integrate with multi-tenant-only PaaS offerings.
+-You need higher throughput of data exchange than is possible when you're using VPN.
+- Company policies prohibit PaaS inside corporate networks.
+
+##### Managed Instance - Lock down inbound and outbound connectivity
+
+<img src="images/50.Public-Endpoint-Access.jpg">
+
+- A managed instance has a dedicated public endpoint address.
+- In the client-side outbound firewall and in the NSG rules, set this public endpoint IP address to limit outbound connectivity.
+- Use a NSG to limit access to the managed instance public endpoint on port 3342.
 
 ------------------------------------------------------------------------
 
