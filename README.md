@@ -617,3 +617,27 @@ The classification includes two metadata attributes:
 ### Azure Data Factory
 
 - Does not store any data except for linked service credentials for cloud data stores, which are encrypted by using certificates.
+
+### Azure SQL Database - Security Overview
+
+| LAYER |	TYPE |	DESCRIPTION |
+| :---: | :---: | :---: |
+|Network|	IP Firewall Rules|	Grant access to databases based on the originating IP address of each request.|
+|Network|	Virtual Network Firewall Rules |	Only accept communications that are sent from selected subnets inside a virtual network.|
+|Access Management|	SQL Authentication|	Authentication of a user when using a username and password.|
+|Access Management|	Azure AD Authentication|	Leverage centrally managed identities in Azure Active Directory (Azure AD).|
+|Authorization|	Row-level Security|	Control access to rows in a table based on the characteristics of the user/query.|
+|Threat Protection|	Auditing|	Tracks database activities by recording events to an audit log in an Azure storage account.|
+|Threat Protection|	Advanced Threat Protection|	Analyzing SQL Server logs to detect unusual and potentially harmful behavior.|
+|Information Protection	|Transport Layer Security (TLS)	|Encryption-in-transit between client and server.|
+|Information Protection	|Transparent Data Encryption (TDE)	|Encryption-at-rest using AES (Azure SQL DB encrypted by default).|
+|Information Protection	|Always Encrypted	|Encryption-in-use (Column-level granularity; Decrypted only for processing by client).|
+|Information Protection	|Dynamic Data Masking	|Limits sensitive data exposure by masking it to non-privileged users.|
+|Security Management|	Vulnerability Assessment	|Discover, track, and help remediate potential database vulnerabilities.|
+|Security Management|	Data Discovery & Classification|	Discovering, classifying, labeling, and protecting the sensitive data in your databases.|
+|Security Management|	Compliance	|Been certified against a number of compliance standards.|
+
+**Credits:**
+
+- Added links in the Resources -> Useful Study guide section.
+- A part of content is reused here in order to have continutity abd maintain a flow during preparation...
