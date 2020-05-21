@@ -637,6 +637,14 @@ The classification includes two metadata attributes:
 |Security Management|	Data Discovery & Classification|	Discovering, classifying, labeling, and protecting the sensitive data in your databases.|
 |Security Management|	Compliance	|Been certified against a number of compliance standards.|
 
+### Azure SQL - Network Access Controls
+
+|CONTROL	|DESCRIPTION|
+| :---: | :---: |
+|Allow Azure Services	|When set to ON, other resources within the Azure boundary can access the SQL resource.|
+|IP firewall rules	|Use this feature to explicitly allow connections from a specific IP address.|
+|Virtual Network firewall rules	|Use this feature to allow traffic from a specific Virtual Network within the Azure boundary.|
+
 **Credits:**
 
 - Added links in the Resources -> Useful Study guide section.
