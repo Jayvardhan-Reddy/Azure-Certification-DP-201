@@ -79,6 +79,17 @@ Road to Azure Data Engineer Part-II
     - Caching
         - Is a mechanism to store frequently used data or assests (web pages, images) for faster retrieval.
 
+### Design for Availability and Recoverability
+
+- Availabilty
+    - Focus on maintaining uptime through small-scale incidents and temporary conditions like partial network outages.
+- Recoverability
+    - Focus on recovery from data loss and from large scale disasters.
+    - **Recovery Ponit Objective**
+        - The maximum duration of acceptable data loss.
+    - **Recovery Time Objective**
+        - The maximum duration of acceptable downtime.
+
 ## 1. Design Azure Data Storage Solutions
 
 ## Azure Storage
