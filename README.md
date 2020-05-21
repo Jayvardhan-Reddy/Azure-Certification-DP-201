@@ -59,6 +59,26 @@ Road to Azure Data Engineer Part-II
   - plan to purge data based on business requirements
 
 
+## Pillars of Azure Architecture
+
+<img src="images/0.Azure-Architecture.jpg">
+
+### Design for Performance and Scalability
+
+- Scaling
+    - Compute resources can be scaled in two different directions:
+        - Scaling up is the action of adding more resources to a single instance.
+        - Scaling out is the addition of instances.
+- Performance
+  When optimizing for performance, you'lll look at network and storage to ensure performance is acceptable. Both can impact the response time of your application and databases.
+- Patterns and Practices
+    - Partitioning
+        - In many large-scale solutions, data is divided into seperate partitions that can be managed and accessed seperatly.
+    - Scaling
+        - Is the process of allocating scale units to match performance requiremnets. This can be done either automatically or manually
+    - Caching
+        - Is a mechanism to store frequently used data or assests (web pages, images) for faster retrieval.
+
 ## 1. Design Azure Data Storage Solutions
 
 ## Azure Storage
@@ -364,6 +384,10 @@ A cloud-based data integration service that allows you to orchestrate and automa
     - Machine learning
     
 ## 3. Design for Data Security and Compliance
+
+### Design for security
+
+<img src="images/52.Security-Design.jpg">
 
 ### Securing Azure Storage
 
