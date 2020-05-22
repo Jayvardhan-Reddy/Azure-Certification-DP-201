@@ -271,7 +271,15 @@ The lambda architecture, addresses this problem by creating two paths for data f
 
 ### IOT
 
+#### Azure IOT Reference Architecture
+
+<img src="images/53.IOT-Ref-Architecture.jpg">
+
+----
+
 <img src="images/24.IOT.jpg">
+
+----
 
 ### Batch Processing
 
