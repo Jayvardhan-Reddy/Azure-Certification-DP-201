@@ -275,6 +275,13 @@ The lambda architecture, addresses this problem by creating two paths for data f
 
 <img src="images/53.IOT-Ref-Architecture.jpg">
 
+**IOT Edge devices:** Devices cannot be constantly connected to the cloud in this case IOT edge devices contian some processing analysis logic within it. So that there is no constant dependency for the cloud.
+- eg: Shipment containers
+
+**IOT devices:** Are constantly connected to the cloud which provides capability tp perform data processing and analysis
+
+**Cloud Gateway (IOT Hub):** Provides a cloud for a device to connect securely to the cloud and send data. It acts a message broker between the devices and the other azure services.
+
 ----
 
 <img src="images/24.IOT.jpg">
