@@ -1,5 +1,6 @@
 # Azure-Certification-DP-201: Designing an Azure Data Solution
-Road to Azure Data Engineer Part-II
+
+Various modules and percentage involved in DP-201.
 
 ## Exam Pattern
 
@@ -415,6 +416,42 @@ A cloud-based data integration service that allows you to orchestrate and automa
 
 <img src="images/52.Security-Design.jpg">
 
+### Identity Management
+
+Identifying users that access your resources in an important part of security design.
+
+- Identity as a security Layer
+- Single sign-on
+    - With SSO, users only need to remember one ID and one password. Access across database systems or applications is granted to a single identity tied to a user.
+-SSO with Azure Active Directory
+    - Azure AD is a cloud based identity service. It has built-in support for synchronizing with your existing on-premises AD or can be used stand-alone, This means that all your applications, whether on premies, in the cloud (including Office 365) or even mobile can share the crednetials.
+
+### Infrastructure Protection
+
+#### Role Based Access Control
+
+Roles are defined as collections of access permissions. Security principals are mapped to roles directly or through group membership.
+
+**Role and Management groups:** 
+
+- Roles are sets of permissions that users can be granted to. Management groups add the ability to group subscriptions together and apply policy at an even higher level.
+
+**Privileged Identity Management:** 
+
+- Aure AD Privileged Identity Mangement (PIM) is an additional paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation.
+
+#### Providing identities to services
+
+An Azure service acan be assigned an identity to ease the management of service access to other Azure resources.
+
+**Service Principals:** 
+
+- It is an identity that is used by a service or application. Like other identities it can be assigned roles.
+
+**Managed identities:** 
+
+- When you create a managed identity for a service, you create an account on the Azure AD tenant. Azure infrastructure will automatically take care of authentication.
+
 ### Securing Azure Storage
 
 - Azure services such as Blob storage, Files share, Table storage, and Data Lake Store all build on Azure Storage.
@@ -540,6 +577,22 @@ Storage Explorer provides the ability to manage access policies for containers.
     - Virtual network rules
 - Database-level firewall rules
     - IP address rules
+    
+### Network Security
+
+Network security is protecting the communication of resources within and outside of your network. The goal is to limit exposure at the network layer across your services and systems
+
+**Internet protection:** 
+
+- By assessing the resources that are internet-facing, and only allow inbound and outbound communication when neccessary. Ensure that they are restricted to only ports/protocols required.
+
+**VIrtual network security:** 
+
+- To isolate Azure services to only allow communication from virtual networks, use VNet service endpoints. WIth service endpoints, Azure service resources can be secured to your virtual network.
+
+**Network Integration:** 
+
+- VPN connections are a common way of establishing secure communication channels between networks, and this is no different when working with virtual networking on Azure. Connection between Azure VNets and an on-premises VPN device is a great way to provide secure communication.
 
 #### Firewalls and VNET access
 
@@ -694,6 +747,15 @@ The classification includes two metadata attributes:
 |Allow Azure Services	|When set to ON, other resources within the Azure boundary can access the SQL resource.|
 |IP firewall rules	|Use this feature to explicitly allow connections from a specific IP address.|
 |Virtual Network firewall rules	|Use this feature to allow traffic from a specific Virtual Network within the Azure boundary.|
+
+### Encryption on Azure
+
+
+|Type	| Technique or service used | Enables encryption of|
+| :---: | :---: | :---: |
+| Raw Encryption | - | Azure Storage, VM Disks, Disk Encryption |
+| Database Encryption |  Transparent Data Encryption | Databases and SQL DW |
+| Encypting Secrets | Azure Key Vault | Storing application secrets |
 
 **Credits:**
 
