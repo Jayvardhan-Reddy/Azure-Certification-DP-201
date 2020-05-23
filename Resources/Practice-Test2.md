@@ -40,3 +40,43 @@
 - Azure Cosmos DB
 - ADL Gen1
 - Azure Blob Store :heavy_check_mark:
+
+6. Which Azure technologies can be used to fulfill the batch layer of a Lambda Architecture?
+
+- Azure Stream Analytics
+- Azure Databricks with Kafka
+- Kafka on Azure HDInsight
+- Storm on Azure HDInsight
+- All of the above :heavy_check_mark:
+
+7. What addittional technology can help you to collect performance metrics about the Azure services deployed in the solution?
+
+- Azure Application Insight
+- Azure Monitor :heavy_check_mark:
+- Azure Dashboard
+- Power BI
+- Application metric storage
+
+8. Your company just acquired 5000 IOT devices. WHat is the best solution to manage and start processing the data from them>
+
+- Azure stream analytics
+- Azure Event Hub
+- Kafka on Azure HDInsight
+- Azure IOT HUB :heavy_check_mark: (Manage the data would require IOT Hub Data Gateway) 
+- Storm on Azure HDInsight
+
+9. During  the streaming process of your 5000 IOT devices, you need to convert binary data to JSON. What are you using?
+
+- Powershell
+- Azure Functions :heavy_check_mark:
+- Azure Data Factory
+- Azure Databricks
+- Azure Logic Apps
+
+10. What technology will be the best one if you need to unified security management and advanced threat protection  to understand and respond to security events on-premises?
+
+- Azre Functions
+- Azure Active Directory
+- Azure Monitor
+- Windows Server Administration
+- Azure Security Center :heavy_check_mark:
