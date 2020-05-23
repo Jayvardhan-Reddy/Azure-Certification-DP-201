@@ -100,3 +100,52 @@
 - Azure Security Center :heavy_check_mark:
 
 ----
+
+11. What will be the best way to secure connectivity between Azure and your local network?
+
+- ExpressRoute
+- On-Premices Data Gateway
+- Azure Gateway connections
+- Any Open VPN Solution
+- Nothing, Azure connections are secured by design
+
+----
+
+12. What service can help to collate security logs, Azure activity logs, server, network, and application logs?
+
+- Azure Monitor
+- Log Analytics
+- System Center Operations Manager
+- Azure Dashboards
+- Azure Application Insights
+
+----
+
+13. For a worldwide globally distributed shopping cart and product catalog website you need to choose the right database technology. What is the best choice?
+
+- Azure Storage
+- Azure SQL Database
+- ADLS Gen2
+- Azure Cosmos DB
+- Azure HDInsight
+
+----
+
+14. What is the maximum total storage you can use to store app and database content from App Service backups?
+
+- 250 GB
+- 10 GB
+- 100 GB
+- 1 TB
+- No limit
+
+----
+
+15. You plan to use Azure DevOps. What can you use to deploy you apps?
+
+- Azure Kubernetes Service
+- Azure Stack
+- Azure SQL database
+- Linux VM
+- VMware
+- All of the above
