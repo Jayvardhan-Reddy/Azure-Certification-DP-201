@@ -757,6 +757,11 @@ The classification includes two metadata attributes:
 | Database Encryption |  Transparent Data Encryption | Databases and SQL DW |
 | Encypting Secrets | Azure Key Vault | Storing application secrets |
 
+**Note:**
+
+- IOT HUb, Event Hub, Blob are the three ways to bring data into Stream Analytics
+- Anything related to RBAC Identities majority cases answer would be Service Srincipal
+
 **Credits:**
 
 - Added links in the Resources -> Useful Study guide section.
