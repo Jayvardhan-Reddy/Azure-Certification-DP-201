@@ -693,6 +693,19 @@ The classification includes two metadata attributes:
   - To secure SQLDB:
       - Add Database rule that only MI of ADFv2 can access SQLDB
       - Add firewall rule that only VNET of SHIR can access SQLDB
+      
+## Miscellaneous
+
+### Serverless Computing
+
+**Containers**
+- A container is a method running applications in a virtualized environment. The virtualization is done at the OS level, making it possible to run multiple identical application instances within the same OS.
+
+**Azure Kubernetes Service (AKS)**
+- Azure Kubernetes Service allows you to set up virtual machines to act as your nodes. Azure hosts the Kubernetes management plane and only bills for the running worker nodes that host your containers.
+
+**Azure Container Instance (ACI)**
+- It is a serverless approach that lets you create and execute containers on demand. You're charged only for the execution time per second.
 
 ------------------------------------------------------------------------
 
@@ -765,4 +778,4 @@ The classification includes two metadata attributes:
 **Credits:**
 
 - Added links in the Resources -> Useful Study guide section.
-- A part of content is reused here in order to have continutity abd maintain a flow during preparation...
+- A part of content is reused here in order to have continutity and maintain a flow during preparation...
