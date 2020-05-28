@@ -707,6 +707,18 @@ The classification includes two metadata attributes:
 **Azure Container Instance (ACI)**
 - It is a serverless approach that lets you create and execute containers on demand. You're charged only for the execution time per second.
 
+### Performance Bottlenecks
+
+**Azure Monitor**
+- A single management point for infrastructure-level logs and monitoring for most of your Azure services.
+
+**Log Analytics**
+- You can query and aggregate data across logs. This cross-source correlation can help you identity issues or performance problems that may not be evident when looking at logs or metrics individually.
+
+**Application performance management**
+- Telemetry can include individual page request times, exceptions within your application, and even custom metrics to track business logic. This telemetry can provide a wealth of insight into apps.
+
+
 ------------------------------------------------------------------------
 
 # Tips to remember, A day prior to the Exam.
