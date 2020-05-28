@@ -103,7 +103,7 @@
 
 11. What will be the best way to secure connectivity between Azure and your local network?
 
-- ExpressRoute
+- ExpressRoute :heavy_check_mark:
 - On-Premices Data Gateway
 - Azure Gateway connections
 - Any Open VPN Solution
@@ -114,7 +114,7 @@
 12. What service can help to collate security logs, Azure activity logs, server, network, and application logs?
 
 - Azure Monitor
-- Log Analytics
+- Log Analytics :heavy_check_mark:
 - System Center Operations Manager
 - Azure Dashboards
 - Azure Application Insights
@@ -126,7 +126,7 @@
 - Azure Storage
 - Azure SQL Database
 - ADLS Gen2
-- Azure Cosmos DB
+- Azure Cosmos DB :heavy_check_mark:
 - Azure HDInsight
 
 ----
@@ -134,7 +134,7 @@
 14. What is the maximum total storage you can use to store app and database content from App Service backups?
 
 - 250 GB
-- 10 GB
+- 10 GB :heavy_check_mark:
 - 100 GB
 - 1 TB
 - No limit
@@ -148,4 +148,4 @@
 - Azure SQL database
 - Linux VM
 - VMware
-- All of the above
+- All of the above :heavy_check_mark:
