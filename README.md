@@ -775,12 +775,30 @@ The classification includes two metadata attributes:
 
 ### Encryption on Azure
 
-
 |Type	| Technique or service used | Enables encryption of|
 | :---: | :---: | :---: |
 | Raw Encryption | - | Azure Storage, VM Disks, Disk Encryption |
 | Database Encryption |  Transparent Data Encryption | Databases and SQL DW |
 | Encypting Secrets | Azure Key Vault | Storing application secrets |
+
+### HDInsight cluster types to run Apache Hive queries
+
+|Cluster Type	| Usage |
+| :---: | :---: |
+| Interactive Query | To optimize for ad hoc, interactive queries |
+| Apache Hadoop | To optimize for hive queries used as batch process |
+| Spark & HBase | Run hive queries |
+
+### SQLDW or Synapse
+
+**To achieve fastest loading speed for moving data into a DW table**
+- load data into a staging table. Define the staging table as a heap and use round-robin for the distribution option.
+
+**Criteria to select a Distribution column **
+- Has many Unique values
+- Does not have Nulls, or has only a few Nulls
+- Is not a date column 
+
 
 **Note:**
 
