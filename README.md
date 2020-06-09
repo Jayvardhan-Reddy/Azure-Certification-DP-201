@@ -810,6 +810,7 @@ The classification includes two metadata attributes:
 
 - IOT HUb, Event Hub, Blob are the three ways to bring data into Stream Analytics
 - Anything related to RBAC Identities majority cases answer would be Service Srincipal
+- In MySQL sharding is the best way to partition the data.
 
 **Credits:**
 
