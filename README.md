@@ -792,13 +792,19 @@ The classification includes two metadata attributes:
 ### SQLDW or Synapse
 
 **To achieve fastest loading speed for moving data into a DW table**
+
 - load data into a staging table. Define the staging table as a heap and use round-robin for the distribution option.
 
-**Criteria to select a Distribution column **
+**Criteria to select a Distribution column ** 
+
 - Has many Unique values
 - Does not have Nulls, or has only a few Nulls
 - Is not a date column 
 
+**Distribution Type**
+
+- Round Robin for small Fact tables
+- Hash distributed for large Fact tables
 
 **Note:**
 
