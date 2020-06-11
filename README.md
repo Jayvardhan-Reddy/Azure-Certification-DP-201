@@ -795,7 +795,7 @@ The classification includes two metadata attributes:
 
 - load data into a staging table. Define the staging table as a heap and use round-robin for the distribution option.
 
-**Criteria to select a Distribution column ** 
+**Criteria to select a Distribution column** 
 
 - Has many Unique values
 - Does not have Nulls, or has only a few Nulls
@@ -811,6 +811,10 @@ The classification includes two metadata attributes:
 - IOT HUb, Event Hub, Blob are the three ways to bring data into Stream Analytics
 - Anything related to RBAC Identities majority cases answer would be Service Srincipal
 - In MySQL sharding is the best way to partition the data.
+  - Criteria to select a column for sharding
+      - Unique (data should be well distributed)
+- Cosmos DB Partition keys should generally be based on unique values. 
+- For a Database using a nonclustered columnstore index will improve performance on analytics and not clustered columnstore index.
 
 **Credits:**
 
