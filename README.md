@@ -189,6 +189,13 @@ Various modules and percentage involved in DP-201.
 
 ------------------------------------------------------------------------
 
+### Cosmos DB Change Feed feature
+  - Enables you to build efficient and scalable solutions for each of the patterns shown below
+  
+  <img src="images/54.CosmosDB-Change-Feed.jpg">
+
+------------------------------------------------------------------------
+
 <img src="images/11.CosmosDB-Usecase.jpg">
 
 ------------------------------------------------------------------------
@@ -409,7 +416,7 @@ A cloud-based data integration service that allows you to orchestrate and automa
 - Complwx Workloads
     - Combining Streaming with interactive queries
     - Machine learning
-    
+
 ## 3. Design for Data Security and Compliance
 
 ### Design for security
@@ -736,11 +743,20 @@ The classification includes two metadata attributes:
 | Azure Blob | Object store |
 | Azure FileStorage | Shared files |
 
-### Azure CosmosDB Usage:
+### Azure Cosmos DB Usage:
 
 - For Real-Time Customer Experiences
 - Telemetry stores for IOT
 - Migrate NoSQL apps
+
+### Azure Cosmos DB Authentication
+
+- It uses two types of keys to authenticate users and provide access to its data and resources.
+
+| Key Type | Resources |
+| :---: | :---: |
+| Master Keys | Used for administrative resources: database accounts, databases, users, and permissions |
+| Resource tokens | Used for application resources: containers, documents, attachments, stored procedures, triggers, and UDFs |
 
 ### Azure Data Factory
 
