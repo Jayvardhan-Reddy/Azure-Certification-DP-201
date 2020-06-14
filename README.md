@@ -815,7 +815,8 @@ The classification includes two metadata attributes:
 
 - Has many Unique values
 - Does not have Nulls, or has only a few Nulls
-- Is not a date column 
+- Is not a date column
+- Use a Column from Group BY, not from where clause
 
 **Distribution Type**
 
