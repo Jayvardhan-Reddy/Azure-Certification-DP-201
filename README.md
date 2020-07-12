@@ -758,6 +758,18 @@ The classification includes two metadata attributes:
 | Master Keys | Used for administrative resources: database accounts, databases, users, and permissions |
 | Resource tokens | Used for application resources: containers, documents, attachments, stored procedures, triggers, and UDFs |
 
+### Azure Cosmos DB SLA for Read/Write operation
+
+<img src="images/55.CosmosDB_SLA_Read_Write_operation.jpg" height="50%" width="50%">
+
+### Azure Storage Service
+
+<img src="images/56.storage_service.jpg" height="50%" width="70%">
+
+### Azure Storage Availability
+
+<img src="images/57.storage_availabilty.jpg" height="50%" width="70%">
+
 ### Azure Data Factory
 
 - Does not store any data except for linked service credentials for cloud data stores, which are encrypted by using certificates.
