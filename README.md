@@ -835,7 +835,7 @@ The classification includes two metadata attributes:
 - Round Robin for small Fact tables
 - Hash distributed for large Fact tables
 
-**Note:**
+**Simple Hacks:**
 
 - IOT HUb, Event Hub, Blob are the three ways to bring data into Stream Analytics
 - Anything related to RBAC Identities majority cases answer would be Service Srincipal
@@ -845,7 +845,8 @@ The classification includes two metadata attributes:
 - Cosmos DB Partition keys should generally be based on unique values. 
 - For a Database using a nonclustered columnstore index will improve performance on analytics and not clustered columnstore index.
 
-**Credits:**
+**Note:**
 
-- Added links in the Resources -> Useful Study guide section.
-- A part of content is reused here in order to have continutity and maintain a flow during preparation...
+- For Labs basic portal knowledge should be sufficient but may vary based on the type of question that appears.
+- Labs may or may not be part of your exam.
+- SQL Database - Security Overview in Tips section taken from [taygan](https://www.taygan.co/) for maintain the flow of readers.
