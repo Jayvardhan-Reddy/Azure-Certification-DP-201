@@ -774,6 +774,11 @@ The classification includes two metadata attributes:
 
 - Does not store any data except for linked service credentials for cloud data stores, which are encrypted by using certificates.
 
+### Azure Databricks (2 types of clusters)
+
+- Interactive clusters are used to analyze data collaboratively with interactive notebooks.
+- Job clusters are used to run fast and robust automated workloads using the UI or API.
+
 ### Azure SQL Database - Security Overview
 
 | LAYER |	TYPE |	DESCRIPTION |
@@ -834,6 +839,10 @@ The classification includes two metadata attributes:
 
 - Round Robin for small Fact tables
 - Hash distributed for large Fact tables
+
+**Data corruption checks**
+
+- We create a user-defined restore point before data is uploaded. Delete the restore point after data corruption checks complete.
 
 ### Simple yet very powerful Hacks: 
 **(You can use these hacks when uncertain about any question or scenario to make quick decisions)**
