@@ -854,6 +854,16 @@ The classification includes two metadata attributes:
       - Unique (data should be well distributed)
 - Cosmos DB Partition keys should generally be based on unique values. 
 - For a Database using a nonclustered columnstore index will improve performance on analytics and not clustered columnstore index.
+- You can use Azure Event Hubs, IoT hub, and Azure Blob storage for **streaming data input**.
+- Azure Stream Analytics Supports Azure SQL DB or Azure Blob storage for **reference data input**.
+- Primary key and secondary key grant access to remotely administer the **Storage account**.
+- Event Hubs Capture creates files in Avro format.
+- If notebooks are involved with scheduling or autoscale of clusters it is databricks.
+- RBAC support for databricks via Premium clusters.
+- If their is a question based on IOT Hub or Event Hub probability of the answer being Stream Analytics for processing is maximum.
+- If you see the term "Relationship"  or nodes and vertices in CosmosDB question by default the option in Gremlin API.
+- If heirachical or Big Data related storage involved then ADLS Gen2.
+- If flat file related storage then blob.
 
 ### Note:
 
